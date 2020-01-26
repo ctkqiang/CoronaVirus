@@ -16,7 +16,7 @@ import android.webkit.WebView;
 /**
  * @Author: John Melody Melissa
  * @Project: Corona Virus
- * @Inpired : By GF
+ * @Inpired : By GF SIN DEE
  */
 
 public class report extends AppCompatActivity {

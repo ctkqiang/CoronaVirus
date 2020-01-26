@@ -17,7 +17,7 @@ import android.widget.Button;
 /**
  * @Author: John Melody Melissa
  * @Project: Corona Virus
- * @Inpired : By GF
+ * @Inpired : By GF SIN DEE
  */
 
 public class MainActivity extends AppCompatActivity {
