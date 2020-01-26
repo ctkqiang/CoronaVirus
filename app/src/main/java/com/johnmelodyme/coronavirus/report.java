@@ -40,4 +40,10 @@ public class report extends AppCompatActivity {
         INF.loadUrl(URL);
         Log.w(TAG, "Corona" + "REPORT_PDF ===> {OK}");
     }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Log.w(TAG, "Corona" + " BACK BUTTON CLICKED ===> {YES}");
+    }
 }

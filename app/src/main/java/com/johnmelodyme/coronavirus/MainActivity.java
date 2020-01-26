@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
         HOME = findViewById(R.id.home);
         INFO = findViewById(R.id.info);
 
-        Log.w(TAG, "Corona" + "APPLICATION STARTED");
+        Log.w(TAG, "Corona" + " APPLICATION STARTED");
         URL = "https://www.who.int/health-topics/coronavirus";
         mainpage = findViewById(R.id.webview);
         webSettings = mainpage.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mainpage.loadUrl(URL);
-        Log.w(TAG, "Corona" + "WEBPAGE ===> {OK}");
+        Log.w(TAG, "Corona" + " WEBPAGE ===> {OK}");
 
         HOME.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent HOME;
                 HOME = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(HOME);
-                Log.w(TAG, "Corona" + "HOME BUTTON CLICKED ===> {YES}");
+                Log.w(TAG, "Corona" + " HOME BUTTON CLICKED ===> {YES}");
             }
         });
 
@@ -60,9 +60,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent INFO;
                 INFO = new Intent(MainActivity.this, report.class);
                 startActivity(INFO);
-                Log.w(TAG, "Corona" + "INFO BUTTON CLICKED ===> {YES}");
+                Log.w(TAG, "Corona" + " INFO BUTTON CLICKED ===> {YES}");
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Log.w(TAG, "Corona" + " BACK BUTTON CLICKED ===> {YES}");
     }
 }
